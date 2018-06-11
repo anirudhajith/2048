@@ -145,13 +145,13 @@ while(True):
     for row in grid:
         oldGrid.append(row.copy())
     command = grid_window.getKey()
-    if command == "a":
+    if command == "a" or command == "Left":
         left()
-    elif command == "d":
+    elif command == "d" or command == "Right":
         right()
-    elif command == "w":
+    elif command == "w" or command == "Up":
         up()
-    elif command == "s":
+    elif command == "s" or command == "Down":
         down()
     #elif command == "z":
         #grid = oldGrid
