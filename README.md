@@ -6,13 +6,15 @@ Start it with `python3 2048.py`
 
 ---
 ### Controls:
-|Key       |Action    |
-|:----------:|:----------:|
-|W         |Up        |
-|A         |Left      |
-|S         |Down      |
-|D         |Right     |
-|Q         |Quit      |
+|Key         |Action    |
+|:----------:|:--------:|
+|Up / W      |Up        |
+|Left / A    |Left      |
+|Down / S    |Down      |
+|Right / D   |Right     |
+|Z           |Undo      |
+|Q           |Quit      |
+
 
 ---
 

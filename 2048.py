@@ -135,15 +135,23 @@ def populateEmpty():
         else:
             grid[p][q] = -4
 
+def copyList(source, dest):
+    dest.clear()
+    for row in source:
+        dest.append(row.copy())
+
 grid_window = GraphWin("2048", 400, 400)
 initGrid()
 updateGrid()
 drawGrid()
 
+oldGrid = []
+old2Grid = []
+
+copyList(grid,oldGrid)
+
 while(True):
-    oldGrid = []
-    for row in grid:
-        oldGrid.append(row.copy())
+    
     command = grid_window.getKey()
     if command == "a" or command == "Left":
         left()
@@ -153,15 +161,17 @@ while(True):
         up()
     elif command == "s" or command == "Down":
         down()
-    #elif command == "z":
-        #grid = oldGrid
-    elif command == "q":
+    elif command == "z": #Undo
+        copyList(old2Grid, grid)
+        copyList(grid, oldGrid)
+        updateGrid()
+        drawGrid()
+    elif command == "q": #Quit
         break
     if grid != oldGrid:
         populateEmpty()
-    updateGrid()
-    drawGrid()
+        updateGrid()
+        drawGrid()
+        copyList(oldGrid, old2Grid)
+        copyList(grid,oldGrid)
             
-    
-    
-    
