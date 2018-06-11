@@ -15,3 +15,7 @@ Start it with `python3 2048.py`
 |Q         |Quit      |
 
 ---
+
+### Screenshots
+
+![](https://github.com/ajithvasudevan/2048/blob/master/Screenshot_20180611_151239.png)
