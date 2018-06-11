@@ -4,6 +4,12 @@
 This is a Python implementation of the popular sliding block puzzle game called **2048**.
 Start it with `python3 2048.py`
 
+
+## Pre-requisites
+On Ubuntu Linux, 
+* **Python 3** needs to be installed and
+* `python3-tk` needs to be installed. This can be done using the command `sudo apt-get install python3-tk`
+
 ---
 ### Controls:
 |Key       |Action    |
